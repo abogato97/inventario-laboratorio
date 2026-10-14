@@ -1,4 +1,3 @@
-# Inventario de Laboratorio
 # Sistema de Inventario de Laboratorio
 
 ## 1. Descripción
@@ -25,25 +24,32 @@ Centralizar la administración de los equipos del laboratorio para optimizar el 
 
 ## 5. Información de los equipos
 
-Cada equipo contiene:
+Cada equipo contiene los siguientes campos (todos obligatorios):
 
-- codigo
-- nombre
-- tipo
-- estado
-- ubicacion
+- codigo: Identificador único del equipo (no permite duplicados).
+- nombre: Nombre descriptivo del activo.
+- tipo: Categoría del equipo (ej. Laptop, Proyector).
+- estado: Situación operativa (valores válidos: Disponible, En mantenimiento, En uso, Baja).
+- ubicacion: Ubicación física en el laboratorio (ej. Lab 1, Estante B).
 
 ## 6. Tecnologías
 
 Lenguaje: Python 3
 
-Almacenamiento: Memoria (listas/diccionarios) / Archivo JSON
+Almacenamiento: Archivo JSON (`data/equipos.json`) sincronizado en memoria usando la librería nativa `json`.
 
 ## 7. Estructura del proyecto
+
+```text
 inventario-laboratorio/
-│-- main.py
-│-- README.md
+├── data/
+│   └── equipos.json
+├── src/
+│   └── inventario.py
+├── main.py
+├── README.md
 └── AGENTS.md
+```
 ## 8. Ejecución
 
 1. Abrir la terminal en la carpeta raíz del proyecto.

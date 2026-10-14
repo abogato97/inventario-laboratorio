@@ -1,0 +1,9 @@
+[
+    {
+        "codigo": "LAB-01",
+        "nombre": "Laptop HP",
+        "tipo": "Laptop",
+        "estado": "En mantenimiento",
+        "ubicacion": "Mesa 3"
+    }
+]

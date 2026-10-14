@@ -8,14 +8,14 @@
 ## 2. Convenciones de nombres
 
 - Utilizar `snake_case` para nombres de variables, parámetros y funciones (ej. `registrar_equipo`, `codigo_equipo`).
-- Utilizar `PascalCase` para las clases si se requiere programar con POO (ej. `EquipoLaboratorio`).
+- El modelo base se estructura con diccionarios. Se reservará `PascalCase` para clases únicamente si se solicita explícitamente programar con POO (ej. `EquipoLaboratorio`).
 - Usar nombres claros y descriptivos en español para todas las entidades.
 
 ## 3. Organización del código
 
 - El punto de entrada principal debe ser el archivo `main.py`.
 - Mantener una estructura modular simple y legible.
-- Separar la lógica de negocio y menú de interactividad de forma clara dentro de funciones dedicadas.
+- Las funciones obligatorias gestionan el menú de interactividad en consola y pueden apoyarse en funciones dedicadas para lógica de validación y persistencia.
 
 ## 4. Funciones
 
@@ -25,10 +25,11 @@
   3. `buscar_equipo()`
   4. `modificar_estado()`
   5. `eliminar_equipo()`
-- Cada función debe realizar únicamente una tarea específica de manera limpia y modular.
+- Cada función debe realizar únicamente una tarea específica de manera limpia y modular, conservando su firma sin parámetros para compatibilidad con el menú.
 
 ## 5. Datos
 
+- Almacenamiento: Archivo JSON (`data/equipos.json`) sincronizado en memoria mediante listas y diccionarios con la biblioteca nativa `json`.
 - Cada objeto de equipo debe incluir obligatoriamente los campos:
   - `codigo`
   - `nombre`
@@ -51,3 +52,8 @@
 
 - Analizar y leer previamente la estructura de archivos (`README.md` y `AGENTS.md`).
 - Explicar brevemente los cambios antes de proponer o aplicar modificaciones en el código fuente.
+
+## 9. Documentación
+
+- Todas las funciones deben incluir docstring.
+- El docstring debe describir brevemente el propósito de la función.
