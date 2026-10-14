@@ -5,5 +5,12 @@
         "tipo": "Laptop",
         "estado": "En mantenimiento",
         "ubicacion": "Mesa 3"
+    },
+    {
+        "codigo": "PC1-Pabellon2",
+        "nombre": "PC1",
+        "tipo": "Computadora",
+        "estado": "Disponible",
+        "ubicacion": "Lab 1"
     }
 ]

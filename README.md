@@ -44,6 +44,8 @@ Almacenamiento: Archivo JSON (`data/equipos.json`) sincronizado en memoria usand
 inventario-laboratorio/
 ├── data/
 │   └── equipos.json
+├── evidencias/
+│   └── validacion.md
 ├── src/
 │   └── inventario.py
 ├── main.py
